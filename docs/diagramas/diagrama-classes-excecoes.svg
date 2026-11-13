@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1877" height="1071" viewBox="0 0 1877 1071" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace">
+<defs><marker id="tri" viewBox="0 0 20 20" refX="10" refY="0" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,18 L10,0 L20,18 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/></marker><marker id="seta" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="13" markerHeight="13" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15" fill="none" stroke="#3A5A4C" stroke-width="1.8"/></marker></defs>
+<rect width="1877" height="1071" fill="#ffffff"/>
+<text x="30.0" y="42.0" font-size="24" fill="#1C2B25" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Conecta Alimento API — Diagrama de Classes: exceções e configuração</text>
+<text x="30.0" y="68.0" font-size="14" fill="#4A5D55" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">pacotes exception e config · cada exceção sobrescreve getStatus() (polimorfismo) e o GlobalExceptionHandler converte tudo em ErroResposta (JSON)</text>
+<path d="M608.0,195.0 L608.0,165.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M608.0,195.0 L608.0,195.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M608.0,225.0 L608.0,195.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M608.0,428.0 L608.0,384.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M231.5,428.0 L1037.5,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M231.5,464.0 L231.5,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M661.0,464.0 L661.0,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1037.5,464.0 L1037.5,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M14.0,428.0 L231.5,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M192.0,616.0 L192.0,594.0 L14.0,594.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M598.5,616.0 L598.5,594.0 L14.0,594.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M14.0,594.0 L14.0,428.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1296.0,265.0 L803.0,265.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<text x="1288.0" y="257.0" font-size="12" fill="#21463A" text-anchor="end" xml:space="preserve">trata</text>
+<path d="M1356.0,365.0 L1356.0,435.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<text x="1364.0" y="399.0" font-size="12" fill="#21463A" xml:space="preserve">cria</text>
+<path d="M503.0,866.0 L503.0,821.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)" stroke-dasharray="7,5"/>
+<path d="M886.5,866.0 L886.5,821.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)" stroke-dasharray="7,5"/>
+<text x="30.0" y="746.0" font-size="17" fill="#4A4A4A" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Configuração (pacote config)</text>
+<rect x="531" y="110" width="154" height="55" rx="4" fill="#ffffff" stroke="#7A7A7A" stroke-width="1.6"/>
+<path d="M531,153 L531,114 Q531,110 535,110 L681,110 Q685,110 685,114 L685,153 Z" fill="#F7F7F7" stroke="#7A7A7A" stroke-width="1.6"/>
+<text x="608.0" y="128.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«java.lang»</text>
+<text x="608.0" y="144.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RuntimeException</text>
+<line x1="531" y1="153" x2="685" y2="153" stroke="#7A7A7A" stroke-width="1.2"/>
+<rect x="413" y="225" width="390" height="159" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M413,268 L413,229 Q413,225 417,225 L799,225 Q803,225 803,229 L803,268 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="608.0" y="243.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="608.0" y="259.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">ApiException</text>
+<line x1="413" y1="268" x2="803" y2="268" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="423.0" y="284.0" font-size="12" fill="#1C2B25" xml:space="preserve">- detalhes: List&lt;String&gt;</text>
+<line x1="413" y1="294" x2="803" y2="294" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="423.0" y="310.0" font-size="12" fill="#1C2B25" xml:space="preserve"># ApiException(mensagem: String)</text>
+<text x="423.0" y="326.0" font-size="12" fill="#1C2B25" xml:space="preserve"># ApiException(mensagem: String, detalhes: List&lt;String&gt;)</text>
+<text x="423.0" y="342.0" font-size="12" fill="#1C2B25" xml:space="preserve"># ApiException(mensagem: String, causa: Throwable)</text>
+<text x="423.0" y="358.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ getStatus(): HttpStatus {abstract}</text>
+<text x="423.0" y="374.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getDetalhes(): List&lt;String&gt;</text>
+<rect x="30" y="464" width="403" height="86" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M30,492 L30,468 Q30,464 34,464 L429,464 Q433,464 433,468 L433,492 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="231.5" y="483.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RecursoNaoEncontradoException</text>
+<line x1="30" y1="492" x2="433" y2="492" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="40.0" y="508.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ RecursoNaoEncontradoException(mensagem: String)</text>
+<text x="40.0" y="524.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ RecursoNaoEncontradoException(recurso: String, id: Long)</text>
+<text x="40.0" y="540.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getStatus(): HttpStatus   → 404 NOT_FOUND</text>
+<rect x="473" y="464" width="376" height="102" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M473,492 L473,468 Q473,464 477,464 L845,464 Q849,464 849,468 L849,492 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="661.0" y="483.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RegraNegocioException</text>
+<line x1="473" y1="492" x2="849" y2="492" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="483.0" y="508.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ RegraNegocioException(mensagem: String)</text>
+<text x="483.0" y="524.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ RegraNegocioException(mensagem: String,</text>
+<text x="483.0" y="540.0" font-size="12" fill="#1C2B25" xml:space="preserve">      pendencias: List&lt;String&gt;)</text>
+<text x="483.0" y="556.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getStatus(): HttpStatus   → 422 UNPROCESSABLE_ENTITY</text>
+<rect x="889" y="464" width="297" height="70" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M889,492 L889,468 Q889,464 893,464 L1182,464 Q1186,464 1186,468 L1186,492 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="1037.5" y="483.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">ConflitoException</text>
+<line x1="889" y1="492" x2="1186" y2="492" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="899.0" y="508.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ ConflitoException(mensagem: String)</text>
+<text x="899.0" y="524.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getStatus(): HttpStatus   → 409 CONFLICT</text>
+<rect x="30" y="616" width="324" height="70" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M30,644 L30,620 Q30,616 34,616 L350,616 Q354,616 354,620 L354,644 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="192.0" y="635.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">CredenciaisInvalidasException</text>
+<line x1="30" y1="644" x2="354" y2="644" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="40.0" y="660.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ CredenciaisInvalidasException()</text>
+<text x="40.0" y="676.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getStatus(): HttpStatus   → 401 UNAUTHORIZED</text>
+<rect x="394" y="616" width="409" height="70" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M394,644 L394,620 Q394,616 398,616 L799,616 Q803,616 803,620 L803,644 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="598.5" y="635.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">BancoDeDadosException</text>
+<line x1="394" y1="644" x2="803" y2="644" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="404.0" y="660.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ BancoDeDadosException(mensagem: String, causa: Throwable)</text>
+<text x="404.0" y="676.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getStatus(): HttpStatus   → 500 INTERNAL_SERVER_ERROR</text>
+<rect x="1296" y="110" width="541" height="255" rx="4" fill="#ffffff" stroke="#7A2E22" stroke-width="1.6"/>
+<path d="M1296,153 L1296,114 Q1296,110 1300,110 L1833,110 Q1837,110 1837,114 L1837,153 Z" fill="#FBE5E1" stroke="#7A2E22" stroke-width="1.6"/>
+<text x="1566.5" y="128.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestControllerAdvice»</text>
+<text x="1566.5" y="144.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">GlobalExceptionHandler</text>
+<line x1="1296" y1="153" x2="1837" y2="153" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="1306.0" y="169.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve">- LOG: Logger</text>
+<line x1="1296" y1="179" x2="1837" y2="179" stroke="#7A2E22" stroke-width="1.2"/>
+<text x="1306.0" y="195.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarApiException(e: ApiException, req): ResponseEntity&lt;ErroResposta&gt;</text>
+<text x="1306.0" y="211.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarValidacao(e: MethodArgumentNotValidException, req)       → 400</text>
+<text x="1306.0" y="227.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarJsonInvalido(e: HttpMessageNotReadableException, req)    → 400</text>
+<text x="1306.0" y="243.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarTipoParametro(e: MethodArgumentTypeMismatchException, req) → 400</text>
+<text x="1306.0" y="259.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarParametroAusente(e: MissingServletRequestParameterException, req) → 400</text>
+<text x="1306.0" y="275.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarMetodo(e: HttpRequestMethodNotSupportedException, req)   → 405</text>
+<text x="1306.0" y="291.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarRotaInexistente(e: NoResourceFoundException, req)        → 404</text>
+<text x="1306.0" y="307.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarBanco(e: DataAccessException, req)                       → 500</text>
+<text x="1306.0" y="323.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ tratarGenerico(e: Exception, req)                              → 500</text>
+<text x="1306.0" y="339.0" font-size="12" fill="#1C2B25" xml:space="preserve">- responder(status: HttpStatus, mensagem: String, req, detalhes)</text>
+<text x="1306.0" y="355.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;ErroResposta&gt;</text>
+<rect x="1296" y="435" width="192" height="149" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1296,478 L1296,439 Q1296,435 1300,435 L1484,435 Q1488,435 1488,439 L1488,478 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1392.0" y="453.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«record»</text>
+<text x="1392.0" y="469.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">ErroResposta</text>
+<line x1="1296" y1="478" x2="1488" y2="478" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1306.0" y="494.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ timestamp: LocalDateTime</text>
+<text x="1306.0" y="510.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ status: int</text>
+<text x="1306.0" y="526.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ erro: String</text>
+<text x="1306.0" y="542.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ mensagem: String</text>
+<text x="1306.0" y="558.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ caminho: String</text>
+<text x="1306.0" y="574.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ detalhes: List&lt;String&gt;</text>
+<rect x="30" y="866" width="238" height="69" rx="4" fill="#ffffff" stroke="#4A4A4A" stroke-width="1.6"/>
+<path d="M30,909 L30,870 Q30,866 34,866 L264,866 Q268,866 268,870 L268,909 Z" fill="#EEEEEE" stroke="#4A4A4A" stroke-width="1.6"/>
+<text x="149.0" y="884.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«SpringBootApplication»</text>
+<text x="149.0" y="900.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">ConectaAlimentoApplication</text>
+<line x1="30" y1="909" x2="268" y2="909" stroke="#4A4A4A" stroke-width="1.2"/>
+<text x="40.0" y="925.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve">+ main(args: String[]): void</text>
+<rect x="338" y="866" width="330" height="85" rx="4" fill="#ffffff" stroke="#4A4A4A" stroke-width="1.6"/>
+<path d="M338,909 L338,870 Q338,866 342,866 L664,866 Q668,866 668,870 L668,909 Z" fill="#EEEEEE" stroke="#4A4A4A" stroke-width="1.6"/>
+<text x="503.0" y="884.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Configuration»</text>
+<text x="503.0" y="900.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">WebConfig</text>
+<line x1="338" y1="909" x2="668" y2="909" stroke="#4A4A4A" stroke-width="1.2"/>
+<text x="348.0" y="925.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ addCorsMappings(registry: CorsRegistry): void</text>
+<text x="348.0" y="941.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ documentacao(): OpenAPI</text>
+<rect x="426" y="766" width="154" height="55" rx="4" fill="#ffffff" stroke="#5B3B6B" stroke-width="1.6"/>
+<path d="M426,809 L426,770 Q426,766 430,766 L576,766 Q580,766 580,770 L580,809 Z" fill="#F1E8F7" stroke="#5B3B6B" stroke-width="1.6"/>
+<text x="503.0" y="784.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«interface · Spring»</text>
+<text x="503.0" y="800.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">WebMvcConfigurer</text>
+<line x1="426" y1="809" x2="580" y2="809" stroke="#5B3B6B" stroke-width="1.2"/>
+<rect x="738" y="866" width="297" height="175" rx="4" fill="#ffffff" stroke="#4A4A4A" stroke-width="1.6"/>
+<path d="M738,909 L738,870 Q738,866 742,866 L1031,866 Q1035,866 1035,870 L1035,909 Z" fill="#EEEEEE" stroke="#4A4A4A" stroke-width="1.6"/>
+<text x="886.5" y="884.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Component»</text>
+<text x="886.5" y="900.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">InicializadorBanco</text>
+<line x1="738" y1="909" x2="1035" y2="909" stroke="#4A4A4A" stroke-width="1.2"/>
+<text x="748.0" y="925.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataSource: DataSource</text>
+<text x="748.0" y="941.0" font-size="12" fill="#1C2B25" xml:space="preserve">- jdbcTemplate: JdbcTemplate</text>
+<text x="748.0" y="957.0" font-size="12" fill="#1C2B25" xml:space="preserve">- estabelecimentoDAO, instituicaoDAO,</text>
+<text x="748.0" y="973.0" font-size="12" fill="#1C2B25" xml:space="preserve">  alimentoDAO, solicitacaoDAO, retiradaDAO</text>
+<line x1="738" y1="983" x2="1035" y2="983" stroke="#4A4A4A" stroke-width="1.2"/>
+<text x="748.0" y="999.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ run(args: ApplicationArguments): void</text>
+<text x="748.0" y="1015.0" font-size="12" fill="#1C2B25" xml:space="preserve">- tabelasExistem(): boolean</text>
+<text x="748.0" y="1031.0" font-size="12" fill="#1C2B25" xml:space="preserve">- carregarDadosExemplo(): void</text>
+<rect x="805" y="766" width="163" height="55" rx="4" fill="#ffffff" stroke="#5B3B6B" stroke-width="1.6"/>
+<path d="M805,809 L805,770 Q805,766 809,766 L964,766 Q968,766 968,770 L968,809 Z" fill="#F1E8F7" stroke="#5B3B6B" stroke-width="1.6"/>
+<text x="886.5" y="784.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«interface · Spring»</text>
+<text x="886.5" y="800.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">ApplicationRunner</text>
+<line x1="805" y1="809" x2="968" y2="809" stroke="#5B3B6B" stroke-width="1.2"/>
+</svg>

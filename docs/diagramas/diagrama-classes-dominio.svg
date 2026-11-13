@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2391" height="1639" viewBox="0 0 2391 1639" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace">
+<defs><marker id="tri" viewBox="0 0 20 20" refX="10" refY="0" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,18 L10,0 L20,18 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/></marker><marker id="seta" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="13" markerHeight="13" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15" fill="none" stroke="#3A5A4C" stroke-width="1.8"/></marker></defs>
+<rect width="2391" height="1639" fill="#ffffff"/>
+<text x="30.0" y="42.0" font-size="24" fill="#1C2B25" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Conecta Alimento API — Diagrama de Classes do domínio (pacote model)</text>
+<text x="30.0" y="68.0" font-size="14" fill="#4A5D55" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">br.com.fiap.conectaalimento.model · getters e setters omitidos · itálico = abstrato · sublinhado = estático · # = protected</text>
+<path d="M1271.5,321.0 L1271.5,287.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M599.0,321.0 L1936.5,321.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M599.0,357.0 L599.0,321.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1006.0,357.0 L1006.0,321.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1484.5,357.0 L1484.5,321.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1936.5,357.0 L1936.5,321.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M599.0,976.0 L599.0,692.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M414.5,976.0 L781.0,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M414.5,1012.0 L414.5,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M781.0,1012.0 L781.0,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1006.0,976.0 L1006.0,932.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M1006.0,976.0 L1622.5,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1216.5,1012.0 L1216.5,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1622.5,1012.0 L1622.5,976.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M415.0,485.0 L367.0,485.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M437.0,485.0 L426.0,491.0 L415.0,485.0 L426.0,479.0 Z" fill="#3A5A4C"/>
+<text x="373.0" y="477.0" font-size="12" fill="#21463A" xml:space="preserve">endereco</text>
+<text x="373.0" y="503.0" font-size="12" fill="#21463A" xml:space="preserve">1</text>
+<text x="411.0" y="503.0" font-size="12" fill="#21463A" text-anchor="end" xml:space="preserve">1</text>
+<path d="M811.0,892.0 L893.0,892.0 L893.0,1012.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="805.0" y="884.0" font-size="12" fill="#21463A" text-anchor="end" xml:space="preserve">0..*</text>
+<text x="901.0" y="1000.0" font-size="12" fill="#21463A" xml:space="preserve">doador  1</text>
+<path d="M1326.0,417.0 L1201.0,417.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1320.0" y="435.0" font-size="12" fill="#21463A" text-anchor="end" xml:space="preserve">0..*</text>
+<text x="1209.0" y="409.0" font-size="12" fill="#21463A" xml:space="preserve">alimento  1</text>
+<path d="M1768.0,417.0 L1643.0,417.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1762.0" y="435.0" font-size="12" fill="#21463A" text-anchor="end" xml:space="preserve">0..1</text>
+<text x="1651.0" y="409.0" font-size="12" fill="#21463A" xml:space="preserve">solicitacao  1</text>
+<path d="M1484.5,693.0 L1484.5,1276.0 L414.5,1276.0 L414.5,1188.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1492.5" y="713.0" font-size="12" fill="#21463A" xml:space="preserve">0..*</text>
+<text x="422.5" y="1208.0" font-size="12" fill="#21463A" xml:space="preserve">instituicao  1</text>
+<path d="M119.0,1362.0 L1857.0,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M119.0,1362.0 L119.0,1416.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)" stroke-dasharray="7,5"/>
+<path d="M340.5,1386.0 L340.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M539.5,1386.0 L539.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M738.5,1386.0 L738.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M907.5,1386.0 L907.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1102.0,1386.0 L1102.0,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1296.5,1386.0 L1296.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1474.5,1386.0 L1474.5,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1670.0,1386.0 L1670.0,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1857.0,1386.0 L1857.0,1362.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<text x="30.0" y="1342.0" font-size="15" fill="#3B4A6B" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Enumerações (model.enums) — implementam a interface Descritivel e tipam os atributos das entidades (ex.: Alimento.categoria: CategoriaAlimento)</text>
+<rect x="30" y="357" width="337" height="271" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M30,400 L30,361 Q30,357 34,357 L363,357 Q367,357 367,361 L367,400 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="198.5" y="375.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«value object»</text>
+<text x="198.5" y="391.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">Endereco</text>
+<line x1="30" y1="400" x2="367" y2="400" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="40.0" y="416.0" font-size="12" fill="#1C2B25" xml:space="preserve">- logradouro: String</text>
+<text x="40.0" y="432.0" font-size="12" fill="#1C2B25" xml:space="preserve">- numero: String</text>
+<text x="40.0" y="448.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bairro: Bairro</text>
+<text x="40.0" y="464.0" font-size="12" fill="#1C2B25" xml:space="preserve">- cep: String</text>
+<text x="40.0" y="480.0" font-size="12" fill="#1C2B25" xml:space="preserve">- latitude: double</text>
+<text x="40.0" y="496.0" font-size="12" fill="#1C2B25" xml:space="preserve">- longitude: double</text>
+<line x1="30" y1="506" x2="367" y2="506" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="40.0" y="522.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Endereco()</text>
+<text x="40.0" y="538.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Endereco(logradouro, numero, bairro, cep)</text>
+<text x="40.0" y="554.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Endereco(logradouro, numero, bairro, cep,</text>
+<text x="40.0" y="570.0" font-size="12" fill="#1C2B25" xml:space="preserve">      latitude, longitude)</text>
+<text x="40.0" y="586.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ distanciaAte(destino: Endereco): double</text>
+<text x="40.0" y="602.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ distanciaAte(lat: double, lon: double): double</text>
+<text x="40.0" y="618.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getEnderecoCompleto(): String</text>
+<rect x="437" y="357" width="324" height="335" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M437,400 L437,361 Q437,357 441,357 L757,357 Q761,357 761,361 L761,400 Z" fill="#E9F3EC" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="599.0" y="375.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="599.0" y="391.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">Usuario</text>
+<line x1="437" y1="400" x2="761" y2="400" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="447.0" y="416.0" font-size="12" fill="#1C2B25" xml:space="preserve">- nome: String</text>
+<text x="447.0" y="432.0" font-size="12" fill="#1C2B25" xml:space="preserve">- responsavel: String</text>
+<text x="447.0" y="448.0" font-size="12" fill="#1C2B25" xml:space="preserve">- email: String</text>
+<text x="447.0" y="464.0" font-size="12" fill="#1C2B25" xml:space="preserve">- senhaHash: String</text>
+<text x="447.0" y="480.0" font-size="12" fill="#1C2B25" xml:space="preserve">- telefone: String</text>
+<text x="447.0" y="496.0" font-size="12" fill="#1C2B25" xml:space="preserve">- endereco: Endereco</text>
+<line x1="437" y1="506" x2="761" y2="506" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="447.0" y="522.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Usuario()</text>
+<text x="447.0" y="538.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Usuario(id, nome, responsavel, email, senha,</text>
+<text x="447.0" y="554.0" font-size="12" fill="#1C2B25" xml:space="preserve">      telefone, endereco)</text>
+<text x="447.0" y="570.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ getTipoPerfil(): String {abstract}</text>
+<text x="447.0" y="586.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ autenticar(senha: String): boolean</text>
+<text x="447.0" y="602.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizarContato(telefone: String): void</text>
+<text x="447.0" y="618.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizarContato(telefone: String,</text>
+<text x="447.0" y="634.0" font-size="12" fill="#1C2B25" xml:space="preserve">      endereco: Endereco): void</text>
+<text x="447.0" y="650.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ distanciaAte(outro: Usuario): double</text>
+<text x="447.0" y="666.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ definirSenha(senha: String): void</text>
+<text x="447.0" y="682.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve">+ gerarHash(texto: String): String</text>
+<rect x="811" y="357" width="390" height="575" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M811,400 L811,361 Q811,357 815,357 L1197,357 Q1201,357 1201,361 L1201,400 Z" fill="#E9F3EC" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1006.0" y="375.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="1006.0" y="391.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">Alimento</text>
+<line x1="811" y1="400" x2="1201" y2="400" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="821.0" y="416.0" font-size="12" fill="#1C2B25" xml:space="preserve">- nome: String</text>
+<text x="821.0" y="432.0" font-size="12" fill="#1C2B25" xml:space="preserve">- categoria: CategoriaAlimento</text>
+<text x="821.0" y="448.0" font-size="12" fill="#1C2B25" xml:space="preserve">- quantidade: double</text>
+<text x="821.0" y="464.0" font-size="12" fill="#1C2B25" xml:space="preserve">- unidade: UnidadeMedida</text>
+<text x="821.0" y="480.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataValidade: LocalDate</text>
+<text x="821.0" y="496.0" font-size="12" fill="#1C2B25" xml:space="preserve">- inicioRetirada: LocalDateTime</text>
+<text x="821.0" y="512.0" font-size="12" fill="#1C2B25" xml:space="preserve">- fimRetirada: LocalDateTime</text>
+<text x="821.0" y="528.0" font-size="12" fill="#1C2B25" xml:space="preserve">- observacoes: String</text>
+<text x="821.0" y="544.0" font-size="12" fill="#1C2B25" xml:space="preserve">- declaracaoSeguranca: boolean</text>
+<text x="821.0" y="560.0" font-size="12" fill="#1C2B25" xml:space="preserve">- status: StatusAlimento</text>
+<text x="821.0" y="576.0" font-size="12" fill="#1C2B25" xml:space="preserve">- doador: EstabelecimentoDoador</text>
+<text x="821.0" y="592.0" font-size="12" fill="#1C2B25" xml:space="preserve">- distanciaKm: Double</text>
+<line x1="811" y1="602" x2="1201" y2="602" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="821.0" y="618.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Alimento()</text>
+<text x="821.0" y="634.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Alimento(id, nome, categoria, quantidade, unidade,</text>
+<text x="821.0" y="650.0" font-size="12" fill="#1C2B25" xml:space="preserve">      dataValidade, inicioRetirada, fimRetirada, doador)</text>
+<text x="821.0" y="666.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ getTipo(): TipoAlimento {abstract}</text>
+<text x="821.0" y="682.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getCondicaoArmazenamento(): CondicaoArmazenamento</text>
+<text x="821.0" y="698.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">      {abstract}</text>
+<text x="821.0" y="714.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ validarSegurancaAlimentar(): List&lt;String&gt; {abstract}</text>
+<text x="821.0" y="730.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ orientacoesEspecificas(): String {abstract}</text>
+<text x="821.0" y="746.0" font-size="12" fill="#1C2B25" xml:space="preserve"># validarRegrasComuns(): List&lt;String&gt;</text>
+<text x="821.0" y="762.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve">+ orientacoesGerais(): String</text>
+<text x="821.0" y="778.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ orientacoesSeguranca(): String</text>
+<text x="821.0" y="794.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getPrazoLimiteRetirada(): LocalDateTime</text>
+<text x="821.0" y="810.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ estaExpirado(): boolean</text>
+<text x="821.0" y="826.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ estaExpirado(referencia: LocalDateTime): boolean</text>
+<text x="821.0" y="842.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ aceitaSolicitacoes(): boolean</text>
+<text x="821.0" y="858.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ podeSerEditado(): boolean</text>
+<text x="821.0" y="874.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ podeSerRemovido(): boolean</text>
+<text x="821.0" y="890.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ horarioDentroDaJanela(dataHora): boolean</text>
+<text x="821.0" y="906.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ janelaFormatada(): String</text>
+<text x="821.0" y="922.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ resumo(): String</text>
+<rect x="1326" y="357" width="317" height="336" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1326,385 L1326,361 Q1326,357 1330,357 L1639,357 Q1643,357 1643,361 L1643,385 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1484.5" y="376.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">Solicitacao</text>
+<line x1="1326" y1="385" x2="1643" y2="385" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1336.0" y="401.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimento: Alimento</text>
+<text x="1336.0" y="417.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicao: InstituicaoReceptora</text>
+<text x="1336.0" y="433.0" font-size="12" fill="#1C2B25" xml:space="preserve">- quantidadeSolicitada: double</text>
+<text x="1336.0" y="449.0" font-size="12" fill="#1C2B25" xml:space="preserve">- status: StatusSolicitacao</text>
+<text x="1336.0" y="465.0" font-size="12" fill="#1C2B25" xml:space="preserve">- motivo: String</text>
+<text x="1336.0" y="481.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataResposta: LocalDateTime</text>
+<line x1="1326" y1="491" x2="1643" y2="491" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1336.0" y="507.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Solicitacao()</text>
+<text x="1336.0" y="523.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Solicitacao(id, alimento, instituicao,</text>
+<text x="1336.0" y="539.0" font-size="12" fill="#1C2B25" xml:space="preserve">      quantidadeSolicitada)</text>
+<text x="1336.0" y="555.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ isAtiva(): boolean</text>
+<text x="1336.0" y="571.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ aceitar(): void</text>
+<text x="1336.0" y="587.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ recusar(): void</text>
+<text x="1336.0" y="603.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ recusar(motivo: String): void</text>
+<text x="1336.0" y="619.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ marcarComoNaoAtendida(motivo: String): void</text>
+<text x="1336.0" y="635.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cancelar(motivo: String): void</text>
+<text x="1336.0" y="651.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ alterarQuantidade(quantidade: double): void</text>
+<text x="1336.0" y="667.0" font-size="12" fill="#1C2B25" xml:space="preserve">- exigirStatus(esperado, acao): void</text>
+<text x="1336.0" y="683.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ resumo(): String</text>
+<rect x="1768" y="357" width="337" height="352" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1768,385 L1768,361 Q1768,357 1772,357 L2101,357 Q2105,357 2105,361 L2105,385 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1936.5" y="376.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">Retirada</text>
+<line x1="1768" y1="385" x2="2105" y2="385" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1778.0" y="401.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacao: Solicitacao</text>
+<text x="1778.0" y="417.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataHoraAgendada: LocalDateTime</text>
+<text x="1778.0" y="433.0" font-size="12" fill="#1C2B25" xml:space="preserve">- entregaConfirmada: boolean</text>
+<text x="1778.0" y="449.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataEntrega: LocalDateTime</text>
+<text x="1778.0" y="465.0" font-size="12" fill="#1C2B25" xml:space="preserve">- quantidadeEntregue: Double</text>
+<text x="1778.0" y="481.0" font-size="12" fill="#1C2B25" xml:space="preserve">- recebimentoConfirmado: boolean</text>
+<text x="1778.0" y="497.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataRecebimento: LocalDateTime</text>
+<text x="1778.0" y="513.0" font-size="12" fill="#1C2B25" xml:space="preserve">- quantidadeRecebida: Double</text>
+<text x="1778.0" y="529.0" font-size="12" fill="#1C2B25" xml:space="preserve">- observacao: String</text>
+<line x1="1768" y1="539" x2="2105" y2="539" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1778.0" y="555.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Retirada()</text>
+<text x="1778.0" y="571.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Retirada(id, solicitacao, dataHoraAgendada)</text>
+<text x="1778.0" y="587.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ possuiConfirmacao(): boolean</text>
+<text x="1778.0" y="603.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ reagendar(novaDataHora: LocalDateTime): void</text>
+<text x="1778.0" y="619.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarEntrega(quantidade: double): void</text>
+<text x="1778.0" y="635.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarRecebimento(quantidade: double): void</text>
+<text x="1778.0" y="651.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarRecebimento(quantidade: double,</text>
+<text x="1778.0" y="667.0" font-size="12" fill="#1C2B25" xml:space="preserve">      observacao: String): void</text>
+<text x="1778.0" y="683.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ isConcluida(): boolean</text>
+<text x="1778.0" y="699.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ resumo(): String</text>
+<rect x="256" y="1012" width="317" height="176" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M256,1040 L256,1016 Q256,1012 260,1012 L569,1012 Q573,1012 573,1016 L573,1040 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="414.5" y="1031.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">InstituicaoReceptora</text>
+<line x1="256" y1="1040" x2="573" y2="1040" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="266.0" y="1056.0" font-size="12" fill="#1C2B25" xml:space="preserve">- tipoInstituicao: TipoInstituicao</text>
+<text x="266.0" y="1072.0" font-size="12" fill="#1C2B25" xml:space="preserve">- capacidadeAtendimento: int</text>
+<line x1="256" y1="1082" x2="573" y2="1082" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="266.0" y="1098.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ InstituicaoReceptora()</text>
+<text x="266.0" y="1114.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ InstituicaoReceptora(id, nome, responsavel,</text>
+<text x="266.0" y="1130.0" font-size="12" fill="#1C2B25" xml:space="preserve">      email, senha, telefone, endereco,</text>
+<text x="266.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve">      tipoInstituicao, capacidadeAtendimento)</text>
+<text x="266.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getTipoPerfil(): String</text>
+<text x="266.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ resumo(): String</text>
+<rect x="619" y="1012" width="324" height="176" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M619,1040 L619,1016 Q619,1012 623,1012 L939,1012 Q943,1012 943,1016 L943,1040 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="781.0" y="1031.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">EstabelecimentoDoador</text>
+<line x1="619" y1="1040" x2="943" y2="1040" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="629.0" y="1056.0" font-size="12" fill="#1C2B25" xml:space="preserve">- cnpj: String</text>
+<text x="629.0" y="1072.0" font-size="12" fill="#1C2B25" xml:space="preserve">- tipoEstabelecimento: TipoEstabelecimento</text>
+<line x1="619" y1="1082" x2="943" y2="1082" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="629.0" y="1098.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ EstabelecimentoDoador()</text>
+<text x="629.0" y="1114.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ EstabelecimentoDoador(id, nome, responsavel,</text>
+<text x="629.0" y="1130.0" font-size="12" fill="#1C2B25" xml:space="preserve">      email, senha, telefone, endereco, cnpj,</text>
+<text x="629.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve">      tipoEstabelecimento)</text>
+<text x="629.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getTipoPerfil(): String</text>
+<text x="629.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ resumo(): String</text>
+<rect x="1035" y="1012" width="363" height="192" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1035,1040 L1035,1016 Q1035,1012 1039,1012 L1394,1012 Q1398,1012 1398,1016 L1398,1040 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1216.5" y="1031.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AlimentoPerecivel</text>
+<line x1="1035" y1="1040" x2="1398" y2="1040" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1045.0" y="1056.0" font-size="12" fill="#1C2B25" xml:space="preserve">- condicaoArmazenamento: CondicaoArmazenamento</text>
+<line x1="1035" y1="1066" x2="1398" y2="1066" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1045.0" y="1082.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ AlimentoPerecivel()</text>
+<text x="1045.0" y="1098.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ AlimentoPerecivel(id, nome, categoria, quantidade,</text>
+<text x="1045.0" y="1114.0" font-size="12" fill="#1C2B25" xml:space="preserve">      unidade, dataValidade, inicioRetirada,</text>
+<text x="1045.0" y="1130.0" font-size="12" fill="#1C2B25" xml:space="preserve">      fimRetirada, doador, condicaoArmazenamento)</text>
+<text x="1045.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getTipo(): TipoAlimento</text>
+<text x="1045.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getCondicaoArmazenamento(): CondicaoArmazenamento</text>
+<text x="1045.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ validarSegurancaAlimentar(): List&lt;String&gt;</text>
+<text x="1045.0" y="1194.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ orientacoesEspecificas(): String</text>
+<rect x="1444" y="1012" width="357" height="224" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1444,1040 L1444,1016 Q1444,1012 1448,1012 L1797,1012 Q1801,1012 1801,1016 L1801,1040 Z" fill="#DCEFE4" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1622.5" y="1031.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AlimentoNaoPerecivel</text>
+<line x1="1444" y1="1040" x2="1801" y2="1040" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1454.0" y="1056.0" font-size="12" fill="#1C2B25" xml:space="preserve">- embalagemIntegra: boolean</text>
+<text x="1454.0" y="1072.0" font-size="12" fill="#1C2B25" xml:space="preserve">- lote: String</text>
+<line x1="1444" y1="1082" x2="1801" y2="1082" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1454.0" y="1098.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ AlimentoNaoPerecivel()</text>
+<text x="1454.0" y="1114.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ AlimentoNaoPerecivel(id, nome, categoria,</text>
+<text x="1454.0" y="1130.0" font-size="12" fill="#1C2B25" xml:space="preserve">      quantidade, unidade, dataValidade,</text>
+<text x="1454.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve">      inicioRetirada, fimRetirada, doador,</text>
+<text x="1454.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve">      embalagemIntegra, lote)</text>
+<text x="1454.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getTipo(): TipoAlimento</text>
+<text x="1454.0" y="1194.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getCondicaoArmazenamento(): CondicaoArmazenamento</text>
+<text x="1454.0" y="1210.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ validarSegurancaAlimentar(): List&lt;String&gt;</text>
+<text x="1454.0" y="1226.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ orientacoesEspecificas(): String</text>
+<rect x="1156" y="96" width="231" height="191" rx="4" fill="#ffffff" stroke="#2E4A3F" stroke-width="1.6"/>
+<path d="M1156,139 L1156,100 Q1156,96 1160,96 L1383,96 Q1387,96 1387,100 L1387,139 Z" fill="#E9F3EC" stroke="#2E4A3F" stroke-width="1.6"/>
+<text x="1271.5" y="114.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="1271.5" y="130.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">Entidade</text>
+<line x1="1156" y1="139" x2="1387" y2="139" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1166.0" y="155.0" font-size="12" fill="#1C2B25" xml:space="preserve">- id: Long</text>
+<text x="1166.0" y="171.0" font-size="12" fill="#1C2B25" xml:space="preserve">- dataCadastro: LocalDateTime</text>
+<line x1="1156" y1="181" x2="1387" y2="181" stroke="#2E4A3F" stroke-width="1.2"/>
+<text x="1166.0" y="197.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Entidade()</text>
+<text x="1166.0" y="213.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ Entidade(id: Long)</text>
+<text x="1166.0" y="229.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve">+ resumo(): String {abstract}</text>
+<text x="1166.0" y="245.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ equals(outro: Object): boolean</text>
+<text x="1166.0" y="261.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ hashCode(): int</text>
+<text x="1166.0" y="277.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ toString(): String</text>
+<rect x="30" y="1416" width="178" height="69" rx="4" fill="#ffffff" stroke="#5B3B6B" stroke-width="1.6"/>
+<path d="M30,1459 L30,1420 Q30,1416 34,1416 L204,1416 Q208,1416 208,1420 L208,1459 Z" fill="#F1E8F7" stroke="#5B3B6B" stroke-width="1.6"/>
+<text x="119.0" y="1434.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«interface»</text>
+<text x="119.0" y="1450.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">Descritivel</text>
+<line x1="30" y1="1459" x2="208" y2="1459" stroke="#5B3B6B" stroke-width="1.2"/>
+<text x="40.0" y="1475.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ getDescricao(): String</text>
+<rect x="268" y="1386" width="145" height="165" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M268,1429 L268,1390 Q268,1386 272,1386 L409,1386 Q413,1386 413,1390 L413,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="340.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="340.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">Bairro</text>
+<line x1="268" y1="1429" x2="413" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="278.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">BOM_RETIRO</text>
+<text x="278.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">PARI</text>
+<text x="278.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">BRAS</text>
+<text x="278.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="278.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<text x="278.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve">- latitude: double</text>
+<text x="278.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- longitude: double</text>
+<rect x="437" y="1386" width="205" height="213" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M437,1429 L437,1390 Q437,1386 441,1386 L638,1386 Q642,1386 642,1390 L642,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="539.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="539.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">CategoriaAlimento</text>
+<line x1="437" y1="1429" x2="642" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="447.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">PANIFICACAO</text>
+<text x="447.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">HORTIFRUTI</text>
+<text x="447.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">LATICINIOS</text>
+<text x="447.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">CARNES</text>
+<text x="447.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">REFEICAO_PRONTA</text>
+<text x="447.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve">MERCEARIA</text>
+<text x="447.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">BEBIDAS</text>
+<text x="447.0" y="1557.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="447.0" y="1573.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<text x="447.0" y="1589.0" font-size="12" fill="#1C2B25" xml:space="preserve">- exigeRefrigeracao: boolean</text>
+<rect x="666" y="1386" width="145" height="165" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M666,1429 L666,1390 Q666,1386 670,1386 L807,1386 Q811,1386 811,1390 L811,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="738.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="738.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">UnidadeMedida</text>
+<line x1="666" y1="1429" x2="811" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="676.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">KG</text>
+<text x="676.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">UNIDADE</text>
+<text x="676.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">LITRO</text>
+<text x="676.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">PACOTE</text>
+<text x="676.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="676.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<text x="676.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- sigla: String</text>
+<rect x="835" y="1386" width="145" height="117" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M835,1429 L835,1390 Q835,1386 839,1386 L976,1386 Q980,1386 980,1390 L980,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="907.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="907.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">TipoAlimento</text>
+<line x1="835" y1="1429" x2="980" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="845.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">PERECIVEL</text>
+<text x="845.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">NAO_PERECIVEL</text>
+<text x="845.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="845.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<rect x="1004" y="1386" width="196" height="133" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M1004,1429 L1004,1390 Q1004,1386 1008,1386 L1196,1386 Q1200,1386 1200,1390 L1200,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="1102.0" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="1102.0" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">CondicaoArmazenamento</text>
+<line x1="1004" y1="1429" x2="1200" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="1014.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">TEMPERATURA_AMBIENTE</text>
+<text x="1014.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">REFRIGERADO</text>
+<text x="1014.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">CONGELADO</text>
+<text x="1014.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="1014.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<rect x="1224" y="1386" width="145" height="197" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M1224,1429 L1224,1390 Q1224,1386 1228,1386 L1365,1386 Q1369,1386 1369,1390 L1369,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="1296.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="1296.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">StatusAlimento</text>
+<line x1="1224" y1="1429" x2="1369" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="1234.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">DISPONIVEL</text>
+<text x="1234.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">SOLICITADO</text>
+<text x="1234.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">RESERVADO</text>
+<text x="1234.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">RETIRADA_AGENDADA</text>
+<text x="1234.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">CONCLUIDO</text>
+<text x="1234.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve">REMOVIDO</text>
+<text x="1234.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">EXPIRADO</text>
+<text x="1234.0" y="1557.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="1234.0" y="1573.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<rect x="1393" y="1386" width="163" height="197" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M1393,1429 L1393,1390 Q1393,1386 1397,1386 L1552,1386 Q1556,1386 1556,1390 L1556,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="1474.5" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="1474.5" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">StatusSolicitacao</text>
+<line x1="1393" y1="1429" x2="1556" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="1403.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">PENDENTE</text>
+<text x="1403.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">ACEITA</text>
+<text x="1403.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">RECUSADA</text>
+<text x="1403.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">NAO_ATENDIDA</text>
+<text x="1403.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">CANCELADA</text>
+<text x="1403.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve">AGENDADA</text>
+<text x="1403.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">CONCLUIDA</text>
+<text x="1403.0" y="1557.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="1403.0" y="1573.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<rect x="1580" y="1386" width="180" height="165" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M1580,1429 L1580,1390 Q1580,1386 1584,1386 L1756,1386 Q1760,1386 1760,1390 L1760,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="1670.0" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="1670.0" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">TipoEstabelecimento</text>
+<line x1="1580" y1="1429" x2="1760" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="1590.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">PADARIA</text>
+<text x="1590.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">MERCADO</text>
+<text x="1590.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">RESTAURANTE</text>
+<text x="1590.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">HORTIFRUTI</text>
+<text x="1590.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">OUTRO</text>
+<text x="1590.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="1590.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<rect x="1784" y="1386" width="146" height="165" rx="4" fill="#ffffff" stroke="#3B4A6B" stroke-width="1.6"/>
+<path d="M1784,1429 L1784,1390 Q1784,1386 1788,1386 L1926,1386 Q1930,1386 1930,1390 L1930,1429 Z" fill="#E7ECF7" stroke="#3B4A6B" stroke-width="1.6"/>
+<text x="1857.0" y="1404.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«enumeration»</text>
+<text x="1857.0" y="1420.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">TipoInstituicao</text>
+<line x1="1784" y1="1429" x2="1930" y2="1429" stroke="#3B4A6B" stroke-width="1.2"/>
+<text x="1794.0" y="1445.0" font-size="12" fill="#1C2B25" xml:space="preserve">ONG</text>
+<text x="1794.0" y="1461.0" font-size="12" fill="#1C2B25" xml:space="preserve">COZINHA_COMUNITARIA</text>
+<text x="1794.0" y="1477.0" font-size="12" fill="#1C2B25" xml:space="preserve">ABRIGO</text>
+<text x="1794.0" y="1493.0" font-size="12" fill="#1C2B25" xml:space="preserve">PROJETO_SOCIAL</text>
+<text x="1794.0" y="1509.0" font-size="12" fill="#1C2B25" xml:space="preserve">OUTRA</text>
+<text x="1794.0" y="1525.0" font-size="12" fill="#1C2B25" xml:space="preserve"></text>
+<text x="1794.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- descricao: String</text>
+<line x1="268" y1="1489" x2="413" y2="1489" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="437" y1="1553" x2="642" y2="1553" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="666" y1="1505" x2="811" y2="1505" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="835" y1="1473" x2="980" y2="1473" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="1004" y1="1489" x2="1200" y2="1489" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="1224" y1="1553" x2="1369" y2="1553" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="1393" y1="1553" x2="1556" y2="1553" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="1580" y1="1521" x2="1760" y2="1521" stroke="#3B4A6B" stroke-width="1"/>
+<line x1="1784" y1="1521" x2="1930" y2="1521" stroke="#3B4A6B" stroke-width="1"/>
+<rect x="1871" y="1012" width="500" height="274" rx="6" fill="#FFFBEA" stroke="#B9A75A" stroke-width="1.2"/>
+<text x="1887.0" y="1038.0" font-size="14" fill="#1C2B25" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Legenda</text>
+<path d="M1889.0,1060.0 L1915.0,1060.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1915,1052 L1927,1060 L1915,1068 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/>
+<text x="1937.0" y="1064.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Herança (generalização)</text>
+<path d="M1889.0,1086.0 L1915.0,1086.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" stroke-dasharray="7,5"/>
+<path d="M1915,1078 L1927,1086 L1915,1094 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/>
+<text x="1937.0" y="1090.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Realização de interface</text>
+<path d="M1889.0,1112.0 L1900.0,1106.0 L1911.0,1112.0 L1900.0,1118.0 Z" fill="#3A5A4C"/>
+<path d="M1911.0,1112.0 L1927.0,1112.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<text x="1937.0" y="1116.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Composição (Endereco vive dentro do Usuario)</text>
+<path d="M1889.0,1138.0 L1927.0,1138.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1937.0" y="1142.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Associação navegável (multiplicidade nas pontas)</text>
+<text x="1889.0" y="1168.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Override: resumo, getTipoPerfil, getTipo, getCondicao-</text>
+<text x="1889.0" y="1194.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">  Armazenamento, validarSegurancaAlimentar, orientacoes...</text>
+<text x="1889.0" y="1220.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Overload: construtores, distanciaAte, atualizarContato,</text>
+<text x="1889.0" y="1246.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">  estaExpirado, recusar, confirmarRecebimento</text>
+<text x="1889.0" y="1272.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Identificador único: id (herdado de Entidade)</text>
+</svg>

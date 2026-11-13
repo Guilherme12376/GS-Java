@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1608" height="2691" viewBox="0 0 1608 2691" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace">
+<defs><marker id="tri" viewBox="0 0 20 20" refX="10" refY="0" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,18 L10,0 L20,18 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/></marker><marker id="seta" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="13" markerHeight="13" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L15,8 L1,15" fill="none" stroke="#3A5A4C" stroke-width="1.8"/></marker></defs>
+<rect width="1608" height="2691" fill="#ffffff"/>
+<text x="30.0" y="42.0" font-size="24" fill="#1C2B25" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Conecta Alimento API — Diagrama de Classes das camadas controller → bo → dao</text>
+<text x="30.0" y="68.0" font-size="14" fill="#4A5D55" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Cada controller depende do seu BO; cada BO usa os DAOs (atributos injetados pelo construtor); os DAOs herdam de BaseDAO&lt;T&gt; e acessam o Oracle via JDBC</text>
+<text x="30.0" y="124.0" font-size="17" fill="#24506E" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Camada controller (API REST)</text>
+<text x="563.0" y="124.0" font-size="17" fill="#2E5E3F" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Camada bo (regras de negócio)</text>
+<text x="1089.0" y="124.0" font-size="17" fill="#7A5B1E" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Camada dao (acesso ao Oracle com JDBC)</text>
+<path d="M439.0,196.0 L563.0,196.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M913.0,196.0 L1089.0,196.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M453.0,782.0 L563.0,782.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M966.0,782.0 L1089.0,782.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M439.0,1107.0 L563.0,1107.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M933.0,1107.0 L1089.0,1107.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M453.0,1528.0 L563.0,1528.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M959.0,1528.0 L1089.0,1528.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M426.0,1885.0 L563.0,1885.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M979.0,1885.0 L1089.0,1885.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M426.0,2258.0 L563.0,2258.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M426.0,2363.0 L481.0,2363.0 L481.0,2393.0 L563.0,2393.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<path d="M738.0,405.0 L738.0,459.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M738.0,736.0 L738.0,682.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M1518.0,180.0 L1558.0,180.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1479.0,766.0 L1558.0,766.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1485.0,1091.0 L1558.0,1091.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1479.0,1512.0 L1558.0,1512.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1465.0,1869.0 L1558.0,1869.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1558.0,180.0 L1558.0,2272.0 L1503.0,2272.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M1485,2272 L1503,2262 L1503,2282 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/>
+<rect x="30" y="150" width="409" height="207" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,193 L30,154 Q30,150 34,150 L435,150 Q439,150 439,154 L439,193 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="234.5" y="168.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · /api/estabelecimentos»</text>
+<text x="234.5" y="184.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">EstabelecimentoController</text>
+<line x1="30" y1="193" x2="439" y2="193" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="209.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bo: EstabelecimentoBO</text>
+<line x1="30" y1="219" x2="439" y2="219" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="235.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): ResponseEntity&lt;List&lt;EstabelecimentoDoador&gt;&gt;</text>
+<text x="40.0" y="251.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): ResponseEntity&lt;EstabelecimentoDoador&gt;</text>
+<text x="40.0" y="267.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarAlimentos(id: Long): ResponseEntity&lt;List&lt;Alimento&gt;&gt;</text>
+<text x="40.0" y="283.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: EstabelecimentoRequest)</text>
+<text x="40.0" y="299.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;EstabelecimentoDoador&gt;</text>
+<text x="40.0" y="315.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: EstabelecimentoRequest)</text>
+<text x="40.0" y="331.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;EstabelecimentoDoador&gt;</text>
+<text x="40.0" y="347.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): ResponseEntity&lt;Void&gt;</text>
+<rect x="563" y="150" width="350" height="255" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,193 L563,154 Q563,150 567,150 L909,150 Q913,150 913,154 L913,193 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="738.0" y="168.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="738.0" y="184.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">EstabelecimentoBO</text>
+<line x1="563" y1="193" x2="913" y2="193" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="209.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<text x="573.0" y="225.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoBO: AlimentoBO</text>
+<line x1="563" y1="235" x2="913" y2="235" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="251.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): List&lt;EstabelecimentoDoador&gt;</text>
+<text x="573.0" y="267.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): EstabelecimentoDoador</text>
+<text x="573.0" y="283.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: EstabelecimentoRequest)</text>
+<text x="573.0" y="299.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : EstabelecimentoDoador</text>
+<text x="573.0" y="315.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: EstabelecimentoRequest)</text>
+<text x="573.0" y="331.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : EstabelecimentoDoador</text>
+<text x="573.0" y="347.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): void</text>
+<text x="573.0" y="363.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarAlimentos(id: Long): List&lt;Alimento&gt;</text>
+<text x="573.0" y="379.0" font-size="12" fill="#1C2B25" xml:space="preserve">- validarCnpjDisponivel(cnpj: String,</text>
+<text x="573.0" y="395.0" font-size="12" fill="#1C2B25" xml:space="preserve">      atual: EstabelecimentoDoador): void</text>
+<rect x="1089" y="150" width="429" height="181" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,193 L1089,154 Q1089,150 1093,150 L1514,150 Q1518,150 1518,154 L1518,193 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1303.5" y="168.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Repository · T_CA_ESTABELECIMENTO»</text>
+<text x="1303.5" y="184.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">EstabelecimentoDAO</text>
+<line x1="1089" y1="193" x2="1518" y2="193" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="209.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getTabela(): String</text>
+<text x="1099.0" y="225.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getColunaId(): String</text>
+<text x="1099.0" y="241.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inserir(e: EstabelecimentoDoador): EstabelecimentoDoador</text>
+<text x="1099.0" y="257.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(e: EstabelecimentoDoador): void</text>
+<text x="1099.0" y="273.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorEmail(email: String)</text>
+<text x="1099.0" y="289.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : Optional&lt;EstabelecimentoDoador&gt;</text>
+<text x="1099.0" y="305.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorCnpj(cnpj: String): Optional&lt;EstabelecimentoDoador&gt;</text>
+<text x="1099.0" y="321.0" font-size="12" fill="#1C2B25" xml:space="preserve"># mapear(rs: ResultSet): EstabelecimentoDoador</text>
+<rect x="563" y="459" width="396" height="223" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,502 L563,463 Q563,459 567,459 L955,459 Q959,459 959,463 L959,502 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="761.0" y="477.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="761.0" y="493.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">UsuarioBO</text>
+<line x1="563" y1="502" x2="959" y2="502" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="518.0" font-size="12" fill="#1C2B25" xml:space="preserve"># estabelecimentoDAO: EstabelecimentoDAO</text>
+<text x="573.0" y="534.0" font-size="12" fill="#1C2B25" xml:space="preserve"># instituicaoDAO: InstituicaoDAO</text>
+<line x1="563" y1="544" x2="959" y2="544" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="560.0" font-size="12" fill="#1C2B25" xml:space="preserve"># validarEmailDisponivel(email: String,</text>
+<text x="573.0" y="576.0" font-size="12" fill="#1C2B25" xml:space="preserve">      usuarioAtual: Usuario): void</text>
+<text x="573.0" y="592.0" font-size="12" fill="#1C2B25" xml:space="preserve"># exigirSenhaNoCadastro(senha: String): void</text>
+<text x="573.0" y="608.0" font-size="12" fill="#1C2B25" xml:space="preserve"># trocarSenhaSeInformada(usuario: Usuario, senha: String)</text>
+<text x="573.0" y="624.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : void</text>
+<text x="573.0" y="640.0" font-size="12" fill="#1C2B25" xml:space="preserve"># montarEndereco(req: EnderecoRequest): Endereco</text>
+<text x="573.0" y="656.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># digitos(texto: String): String</text>
+<text x="573.0" y="672.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># normalizarEmail(email: String): String</text>
+<rect x="30" y="736" width="423" height="271" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,779 L30,740 Q30,736 34,736 L449,736 Q453,736 453,740 L453,779 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="241.5" y="754.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · /api/instituicoes»</text>
+<text x="241.5" y="770.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">InstituicaoController</text>
+<line x1="30" y1="779" x2="453" y2="779" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="795.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bo: InstituicaoBO</text>
+<text x="40.0" y="811.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoBO: AlimentoBO</text>
+<text x="40.0" y="827.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoBO: SolicitacaoBO</text>
+<line x1="30" y1="837" x2="453" y2="837" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="853.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): ResponseEntity&lt;List&lt;InstituicaoReceptora&gt;&gt;</text>
+<text x="40.0" y="869.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): ResponseEntity&lt;InstituicaoReceptora&gt;</text>
+<text x="40.0" y="885.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarSolicitacoes(id: Long)</text>
+<text x="40.0" y="901.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;List&lt;Solicitacao&gt;&gt;</text>
+<text x="40.0" y="917.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ alimentosProximos(id: Long): ResponseEntity&lt;List&lt;Alimento&gt;&gt;</text>
+<text x="40.0" y="933.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: InstituicaoRequest)</text>
+<text x="40.0" y="949.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;InstituicaoReceptora&gt;</text>
+<text x="40.0" y="965.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: InstituicaoRequest)</text>
+<text x="40.0" y="981.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;InstituicaoReceptora&gt;</text>
+<text x="40.0" y="997.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): ResponseEntity&lt;Void&gt;</text>
+<rect x="563" y="736" width="403" height="175" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,779 L563,740 Q563,736 567,736 L962,736 Q966,736 966,740 L966,779 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="764.5" y="754.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="764.5" y="770.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">InstituicaoBO</text>
+<line x1="563" y1="779" x2="966" y2="779" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="795.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<line x1="563" y1="805" x2="966" y2="805" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="821.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): List&lt;InstituicaoReceptora&gt;</text>
+<text x="573.0" y="837.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): InstituicaoReceptora</text>
+<text x="573.0" y="853.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: InstituicaoRequest): InstituicaoReceptora</text>
+<text x="573.0" y="869.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: InstituicaoRequest)</text>
+<text x="573.0" y="885.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : InstituicaoReceptora</text>
+<text x="573.0" y="901.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): void</text>
+<rect x="1089" y="736" width="390" height="165" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,779 L1089,740 Q1089,736 1093,736 L1475,736 Q1479,736 1479,740 L1479,779 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1284.0" y="754.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Repository · T_CA_INSTITUICAO»</text>
+<text x="1284.0" y="770.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">InstituicaoDAO</text>
+<line x1="1089" y1="779" x2="1479" y2="779" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="795.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getTabela(): String</text>
+<text x="1099.0" y="811.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getColunaId(): String</text>
+<text x="1099.0" y="827.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inserir(i: InstituicaoReceptora): InstituicaoReceptora</text>
+<text x="1099.0" y="843.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(i: InstituicaoReceptora): void</text>
+<text x="1099.0" y="859.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorEmail(email: String)</text>
+<text x="1099.0" y="875.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : Optional&lt;InstituicaoReceptora&gt;</text>
+<text x="1099.0" y="891.0" font-size="12" fill="#1C2B25" xml:space="preserve"># mapear(rs: ResultSet): InstituicaoReceptora</text>
+<rect x="30" y="1061" width="409" height="255" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,1104 L30,1065 Q30,1061 34,1061 L435,1061 Q439,1061 439,1065 L439,1104 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="234.5" y="1079.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · /api/alimentos»</text>
+<text x="234.5" y="1095.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AlimentoController</text>
+<line x1="30" y1="1104" x2="439" y2="1104" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1120.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bo: AlimentoBO</text>
+<line x1="30" y1="1130" x2="439" y2="1130" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(status: StatusAlimento)</text>
+<text x="40.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;List&lt;Alimento&gt;&gt;</text>
+<text x="40.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ disponiveis(categoria: CategoriaAlimento, bairro: Bairro,</text>
+<text x="40.0" y="1194.0" font-size="12" fill="#1C2B25" xml:space="preserve">      prazoDias: Integer, instituicaoId: Long)</text>
+<text x="40.0" y="1210.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;List&lt;Alimento&gt;&gt;</text>
+<text x="40.0" y="1226.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ orientacoes(): ResponseEntity&lt;Map&lt;String, String&gt;&gt;</text>
+<text x="40.0" y="1242.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): ResponseEntity&lt;Alimento&gt;</text>
+<text x="40.0" y="1258.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: AlimentoRequest): ResponseEntity&lt;Alimento&gt;</text>
+<text x="40.0" y="1274.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: AlimentoRequest)</text>
+<text x="40.0" y="1290.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Alimento&gt;</text>
+<text x="40.0" y="1306.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): ResponseEntity&lt;Void&gt;</text>
+<rect x="563" y="1061" width="370" height="367" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,1104 L563,1065 Q563,1061 567,1061 L929,1061 Q933,1061 933,1065 L933,1104 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="748.0" y="1079.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="748.0" y="1095.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AlimentoBO</text>
+<line x1="563" y1="1104" x2="933" y2="1104" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1120.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<text x="573.0" y="1136.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<text x="573.0" y="1152.0" font-size="12" fill="#1C2B25" xml:space="preserve">- estabelecimentoDAO: EstabelecimentoDAO</text>
+<text x="573.0" y="1168.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicaoDAO: InstituicaoDAO</text>
+<line x1="563" y1="1178" x2="933" y2="1178" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1194.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(status: StatusAlimento): List&lt;Alimento&gt;</text>
+<text x="573.0" y="1210.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarDisponiveis(): List&lt;Alimento&gt;</text>
+<text x="573.0" y="1226.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarDisponiveis(categoria: CategoriaAlimento,</text>
+<text x="573.0" y="1242.0" font-size="12" fill="#1C2B25" xml:space="preserve">      bairro: Bairro, prazoDias: Integer,</text>
+<text x="573.0" y="1258.0" font-size="12" fill="#1C2B25" xml:space="preserve">      instituicaoId: Long): List&lt;Alimento&gt;</text>
+<text x="573.0" y="1274.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): Alimento</text>
+<text x="573.0" y="1290.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cadastrar(req: AlimentoRequest): Alimento</text>
+<text x="573.0" y="1306.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: AlimentoRequest): Alimento</text>
+<text x="573.0" y="1322.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): void</text>
+<text x="573.0" y="1338.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ orientacoes(): Map&lt;String, String&gt;</text>
+<text x="573.0" y="1354.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizarExpirados(): void</text>
+<text x="573.0" y="1370.0" font-size="12" fill="#1C2B25" xml:space="preserve">- montar(req: AlimentoRequest,</text>
+<text x="573.0" y="1386.0" font-size="12" fill="#1C2B25" xml:space="preserve">      doador: EstabelecimentoDoador): Alimento</text>
+<text x="573.0" y="1402.0" font-size="12" fill="#1C2B25" xml:space="preserve">- validarSegurancaAlimentar(alimento: Alimento,</text>
+<text x="573.0" y="1418.0" font-size="12" fill="#1C2B25" xml:space="preserve">      mensagem: String): void</text>
+<rect x="1089" y="1061" width="396" height="287" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,1104 L1089,1065 Q1089,1061 1093,1061 L1481,1061 Q1485,1061 1485,1065 L1485,1104 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1287.0" y="1079.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Repository · T_CA_ALIMENTO»</text>
+<text x="1287.0" y="1095.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AlimentoDAO</text>
+<line x1="1089" y1="1104" x2="1485" y2="1104" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1120.0" font-size="12" fill="#1C2B25" xml:space="preserve">- estabelecimentoDAO: EstabelecimentoDAO</text>
+<line x1="1089" y1="1130" x2="1485" y2="1130" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1146.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getTabela(): String</text>
+<text x="1099.0" y="1162.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getColunaId(): String</text>
+<text x="1099.0" y="1178.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inserir(a: Alimento): Alimento</text>
+<text x="1099.0" y="1194.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(a: Alimento): void</text>
+<text x="1099.0" y="1210.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizarStatus(id: Long, status: StatusAlimento): void</text>
+<text x="1099.0" y="1226.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarPorEstabelecimento(estabelecimentoId: Long)</text>
+<text x="1099.0" y="1242.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : List&lt;Alimento&gt;</text>
+<text x="1099.0" y="1258.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarPorStatus(status: StatusAlimento): List&lt;Alimento&gt;</text>
+<text x="1099.0" y="1274.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarAtivosSemAgendamento(): List&lt;Alimento&gt;</text>
+<text x="1099.0" y="1290.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarAbertosParaSolicitacao(): List&lt;Alimento&gt;</text>
+<text x="1099.0" y="1306.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ contarPorEstabelecimento(estabelecimentoId: Long): long</text>
+<text x="1099.0" y="1322.0" font-size="12" fill="#1C2B25" xml:space="preserve"># mapear(rs: ResultSet): Alimento</text>
+<text x="1099.0" y="1338.0" font-size="12" fill="#1C2B25" xml:space="preserve"># completar(alimentos: List&lt;Alimento&gt;): List&lt;Alimento&gt;</text>
+<rect x="30" y="1482" width="423" height="255" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,1525 L30,1486 Q30,1482 34,1482 L449,1482 Q453,1482 453,1486 L453,1525 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="241.5" y="1500.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · /api/solicitacoes»</text>
+<text x="241.5" y="1516.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">SolicitacaoController</text>
+<line x1="30" y1="1525" x2="453" y2="1525" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bo: SolicitacaoBO</text>
+<line x1="30" y1="1551" x2="453" y2="1551" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1567.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(status: StatusSolicitacao, instituicaoId: Long,</text>
+<text x="40.0" y="1583.0" font-size="12" fill="#1C2B25" xml:space="preserve">      estabelecimentoId: Long)</text>
+<text x="40.0" y="1599.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;List&lt;Solicitacao&gt;&gt;</text>
+<text x="40.0" y="1615.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): ResponseEntity&lt;Solicitacao&gt;</text>
+<text x="40.0" y="1631.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ criar(req: SolicitacaoRequest): ResponseEntity&lt;Solicitacao&gt;</text>
+<text x="40.0" y="1647.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(id: Long, req: QuantidadeRequest)</text>
+<text x="40.0" y="1663.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Solicitacao&gt;</text>
+<text x="40.0" y="1679.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ aceitar(id: Long): ResponseEntity&lt;Solicitacao&gt;</text>
+<text x="40.0" y="1695.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ recusar(id: Long, req: RecusaRequest)</text>
+<text x="40.0" y="1711.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Solicitacao&gt;</text>
+<text x="40.0" y="1727.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cancelar(id: Long): ResponseEntity&lt;Void&gt;</text>
+<rect x="563" y="1482" width="396" height="303" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,1525 L563,1486 Q563,1482 567,1482 L955,1482 Q959,1482 959,1486 L959,1525 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="761.0" y="1500.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="761.0" y="1516.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">SolicitacaoBO</text>
+<line x1="563" y1="1525" x2="959" y2="1525" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<text x="573.0" y="1557.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<text x="573.0" y="1573.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicaoDAO: InstituicaoDAO</text>
+<text x="573.0" y="1589.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoBO: AlimentoBO</text>
+<line x1="563" y1="1599" x2="959" y2="1599" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1615.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(status: StatusSolicitacao, instituicaoId: Long,</text>
+<text x="573.0" y="1631.0" font-size="12" fill="#1C2B25" xml:space="preserve">      estabelecimentoId: Long): List&lt;Solicitacao&gt;</text>
+<text x="573.0" y="1647.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): Solicitacao</text>
+<text x="573.0" y="1663.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ criar(req: SolicitacaoRequest): Solicitacao</text>
+<text x="573.0" y="1679.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizarQuantidade(id: Long, quantidade: double)</text>
+<text x="573.0" y="1695.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : Solicitacao</text>
+<text x="573.0" y="1711.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ aceitar(id: Long): Solicitacao</text>
+<text x="573.0" y="1727.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ recusar(id: Long, motivo: String): Solicitacao</text>
+<text x="573.0" y="1743.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cancelar(id: Long): void</text>
+<text x="573.0" y="1759.0" font-size="12" fill="#1C2B25" xml:space="preserve">- liberarAlimentoSeNaoHouverPendentes(alimento: Alimento)</text>
+<text x="573.0" y="1775.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : void</text>
+<rect x="1089" y="1482" width="390" height="287" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,1525 L1089,1486 Q1089,1482 1093,1482 L1475,1482 Q1479,1482 1479,1486 L1479,1525 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1284.0" y="1500.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Repository · T_CA_SOLICITACAO»</text>
+<text x="1284.0" y="1516.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">SolicitacaoDAO</text>
+<line x1="1089" y1="1525" x2="1479" y2="1525" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1541.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<text x="1099.0" y="1557.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicaoDAO: InstituicaoDAO</text>
+<line x1="1089" y1="1567" x2="1479" y2="1567" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1583.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getTabela(): String</text>
+<text x="1099.0" y="1599.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getColunaId(): String</text>
+<text x="1099.0" y="1615.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inserir(s: Solicitacao): Solicitacao</text>
+<text x="1099.0" y="1631.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(s: Solicitacao): void</text>
+<text x="1099.0" y="1647.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarPorAlimento(alimentoId: Long): List&lt;Solicitacao&gt;</text>
+<text x="1099.0" y="1663.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ contarPorInstituicao(instituicaoId: Long): long</text>
+<text x="1099.0" y="1679.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listarComFiltros(status: StatusSolicitacao,</text>
+<text x="1099.0" y="1695.0" font-size="12" fill="#1C2B25" xml:space="preserve">      instituicaoId: Long, estabelecimentoId: Long)</text>
+<text x="1099.0" y="1711.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : List&lt;Solicitacao&gt;</text>
+<text x="1099.0" y="1727.0" font-size="12" fill="#1C2B25" xml:space="preserve"># mapear(rs: ResultSet): Solicitacao</text>
+<text x="1099.0" y="1743.0" font-size="12" fill="#1C2B25" xml:space="preserve"># completar(solicitacoes: List&lt;Solicitacao&gt;)</text>
+<text x="1099.0" y="1759.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : List&lt;Solicitacao&gt;</text>
+<rect x="30" y="1839" width="396" height="239" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,1882 L30,1843 Q30,1839 34,1839 L422,1839 Q426,1839 426,1843 L426,1882 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="228.0" y="1857.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · /api/retiradas»</text>
+<text x="228.0" y="1873.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RetiradaController</text>
+<line x1="30" y1="1882" x2="426" y2="1882" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1898.0" font-size="12" fill="#1C2B25" xml:space="preserve">- bo: RetiradaBO</text>
+<line x1="30" y1="1908" x2="426" y2="1908" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="1924.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): ResponseEntity&lt;List&lt;Retirada&gt;&gt;</text>
+<text x="40.0" y="1940.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): ResponseEntity&lt;Retirada&gt;</text>
+<text x="40.0" y="1956.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ agendar(req: RetiradaRequest): ResponseEntity&lt;Retirada&gt;</text>
+<text x="40.0" y="1972.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ reagendar(id: Long, req: ReagendamentoRequest)</text>
+<text x="40.0" y="1988.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Retirada&gt;</text>
+<text x="40.0" y="2004.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarEntrega(id: Long, req: ConfirmacaoRequest)</text>
+<text x="40.0" y="2020.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Retirada&gt;</text>
+<text x="40.0" y="2036.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarRecebimento(id: Long, req: ConfirmacaoRequest)</text>
+<text x="40.0" y="2052.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : ResponseEntity&lt;Retirada&gt;</text>
+<text x="40.0" y="2068.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cancelar(id: Long): ResponseEntity&lt;Void&gt;</text>
+<rect x="563" y="1839" width="416" height="319" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,1882 L563,1843 Q563,1839 567,1839 L975,1839 Q979,1839 979,1843 L979,1882 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="771.0" y="1857.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="771.0" y="1873.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RetiradaBO</text>
+<line x1="563" y1="1882" x2="979" y2="1882" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1898.0" font-size="12" fill="#1C2B25" xml:space="preserve">- retiradaDAO: RetiradaDAO</text>
+<text x="573.0" y="1914.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<text x="573.0" y="1930.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<line x1="563" y1="1940" x2="979" y2="1940" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="1956.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): List&lt;Retirada&gt;</text>
+<text x="573.0" y="1972.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscar(id: Long): Retirada</text>
+<text x="573.0" y="1988.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ agendar(req: RetiradaRequest): Retirada</text>
+<text x="573.0" y="2004.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ reagendar(id: Long, novaDataHora: LocalDateTime): Retirada</text>
+<text x="573.0" y="2020.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarEntrega(id: Long, quantidade: Double): Retirada</text>
+<text x="573.0" y="2036.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ confirmarRecebimento(id: Long, quantidade: Double,</text>
+<text x="573.0" y="2052.0" font-size="12" fill="#1C2B25" xml:space="preserve">      observacao: String): Retirada</text>
+<text x="573.0" y="2068.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ cancelar(id: Long): void</text>
+<text x="573.0" y="2084.0" font-size="12" fill="#1C2B25" xml:space="preserve">- validarHorario(alimento: Alimento,</text>
+<text x="573.0" y="2100.0" font-size="12" fill="#1C2B25" xml:space="preserve">      dataHora: LocalDateTime): void</text>
+<text x="573.0" y="2116.0" font-size="12" fill="#1C2B25" xml:space="preserve">- validarQuantidade(retirada: Retirada, quantidade: Double)</text>
+<text x="573.0" y="2132.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : double</text>
+<text x="573.0" y="2148.0" font-size="12" fill="#1C2B25" xml:space="preserve">- concluirSeConfirmada(retirada: Retirada): void</text>
+<rect x="1089" y="1839" width="376" height="207" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,1882 L1089,1843 Q1089,1839 1093,1839 L1461,1839 Q1465,1839 1465,1843 L1465,1882 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1277.0" y="1857.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Repository · T_CA_RETIRADA»</text>
+<text x="1277.0" y="1873.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">RetiradaDAO</text>
+<line x1="1089" y1="1882" x2="1465" y2="1882" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1898.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<line x1="1089" y1="1908" x2="1465" y2="1908" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="1924.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getTabela(): String</text>
+<text x="1099.0" y="1940.0" font-size="12" fill="#1C2B25" xml:space="preserve"># getColunaId(): String</text>
+<text x="1099.0" y="1956.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inserir(r: Retirada): Retirada</text>
+<text x="1099.0" y="1972.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ atualizar(r: Retirada): void</text>
+<text x="1099.0" y="1988.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorSolicitacao(solicitacaoId: Long)</text>
+<text x="1099.0" y="2004.0" font-size="12" fill="#1C2B25" xml:space="preserve">      : Optional&lt;Retirada&gt;</text>
+<text x="1099.0" y="2020.0" font-size="12" fill="#1C2B25" xml:space="preserve"># mapear(rs: ResultSet): Retirada</text>
+<text x="1099.0" y="2036.0" font-size="12" fill="#1C2B25" xml:space="preserve"># completar(retiradas: List&lt;Retirada&gt;): List&lt;Retirada&gt;</text>
+<rect x="30" y="2212" width="396" height="175" rx="4" fill="#ffffff" stroke="#24506E" stroke-width="1.6"/>
+<path d="M30,2255 L30,2216 Q30,2212 34,2212 L422,2212 Q426,2212 426,2216 L426,2255 Z" fill="#E3F0FA" stroke="#24506E" stroke-width="1.6"/>
+<text x="228.0" y="2230.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«RestController · / e /api»</text>
+<text x="228.0" y="2246.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">HomeController</text>
+<line x1="30" y1="2255" x2="426" y2="2255" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="2271.0" font-size="12" fill="#1C2B25" xml:space="preserve">- autenticacaoBO: AutenticacaoBO</text>
+<text x="40.0" y="2287.0" font-size="12" fill="#1C2B25" xml:space="preserve">- indicadoresBO: IndicadoresBO</text>
+<text x="40.0" y="2303.0" font-size="12" fill="#1C2B25" xml:space="preserve">- jdbcTemplate: JdbcTemplate</text>
+<line x1="30" y1="2313" x2="426" y2="2313" stroke="#24506E" stroke-width="1.2"/>
+<text x="40.0" y="2329.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ inicio(): Map&lt;String, Object&gt;</text>
+<text x="40.0" y="2345.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ status(): ResponseEntity&lt;Map&lt;String, Object&gt;&gt;</text>
+<text x="40.0" y="2361.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ login(req: LoginRequest): ResponseEntity&lt;LoginResponse&gt;</text>
+<text x="40.0" y="2377.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ indicadores(): ResponseEntity&lt;IndicadoresResponse&gt;</text>
+<rect x="563" y="2212" width="324" height="111" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,2255 L563,2216 Q563,2212 567,2212 L883,2212 Q887,2212 887,2216 L887,2255 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="725.0" y="2230.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="725.0" y="2246.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">AutenticacaoBO</text>
+<line x1="563" y1="2255" x2="887" y2="2255" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="2271.0" font-size="12" fill="#1C2B25" xml:space="preserve">- estabelecimentoDAO: EstabelecimentoDAO</text>
+<text x="573.0" y="2287.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicaoDAO: InstituicaoDAO</text>
+<line x1="563" y1="2297" x2="887" y2="2297" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="2313.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ autenticar(req: LoginRequest): LoginResponse</text>
+<rect x="563" y="2347" width="284" height="191" rx="4" fill="#ffffff" stroke="#2E5E3F" stroke-width="1.6"/>
+<path d="M563,2390 L563,2351 Q563,2347 567,2347 L843,2347 Q847,2347 847,2351 L847,2390 Z" fill="#E2F2E7" stroke="#2E5E3F" stroke-width="1.6"/>
+<text x="705.0" y="2365.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«Service»</text>
+<text x="705.0" y="2381.0" font-size="14" fill="#1C2B25" font-weight="bold" text-anchor="middle" xml:space="preserve">IndicadoresBO</text>
+<line x1="563" y1="2390" x2="847" y2="2390" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="2406.0" font-size="12" fill="#1C2B25" xml:space="preserve">- estabelecimentoDAO: EstabelecimentoDAO</text>
+<text x="573.0" y="2422.0" font-size="12" fill="#1C2B25" xml:space="preserve">- instituicaoDAO: InstituicaoDAO</text>
+<text x="573.0" y="2438.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoDAO: AlimentoDAO</text>
+<text x="573.0" y="2454.0" font-size="12" fill="#1C2B25" xml:space="preserve">- solicitacaoDAO: SolicitacaoDAO</text>
+<text x="573.0" y="2470.0" font-size="12" fill="#1C2B25" xml:space="preserve">- retiradaDAO: RetiradaDAO</text>
+<text x="573.0" y="2486.0" font-size="12" fill="#1C2B25" xml:space="preserve">- alimentoBO: AlimentoBO</text>
+<line x1="563" y1="2496" x2="847" y2="2496" stroke="#2E5E3F" stroke-width="1.2"/>
+<text x="573.0" y="2512.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ calcular(): IndicadoresResponse</text>
+<text x="573.0" y="2528.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve">- arredondar(valor: double): double</text>
+<rect x="1089" y="2212" width="396" height="415" rx="4" fill="#ffffff" stroke="#7A5B1E" stroke-width="1.6"/>
+<path d="M1089,2255 L1089,2216 Q1089,2212 1093,2212 L1481,2212 Q1485,2212 1485,2216 L1485,2255 Z" fill="#FFF1D6" stroke="#7A5B1E" stroke-width="1.6"/>
+<text x="1287.0" y="2230.0" font-size="11" fill="#4A5D55" text-anchor="middle" xml:space="preserve">«abstract»</text>
+<text x="1287.0" y="2246.0" font-size="14" fill="#1C2B25" font-weight="bold" font-style="italic" text-anchor="middle" xml:space="preserve">BaseDAO&lt;T extends Entidade&gt;</text>
+<line x1="1089" y1="2255" x2="1485" y2="2255" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="2271.0" font-size="12" fill="#1C2B25" xml:space="preserve"># dataSource: DataSource</text>
+<line x1="1089" y1="2281" x2="1485" y2="2281" stroke="#7A5B1E" stroke-width="1.2"/>
+<text x="1099.0" y="2297.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve"># getTabela(): String {abstract}</text>
+<text x="1099.0" y="2313.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve"># getColunaId(): String {abstract}</text>
+<text x="1099.0" y="2329.0" font-size="12" fill="#14532D" font-style="italic" xml:space="preserve"># mapear(rs: ResultSet): T {abstract}</text>
+<text x="1099.0" y="2345.0" font-size="12" fill="#1C2B25" xml:space="preserve"># completar(itens: List&lt;T&gt;): List&lt;T&gt;</text>
+<text x="1099.0" y="2361.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorId(id: Long): Optional&lt;T&gt;</text>
+<text x="1099.0" y="2377.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ listar(): List&lt;T&gt;</text>
+<text x="1099.0" y="2393.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ buscarPorIds(ids: Collection&lt;Long&gt;): List&lt;T&gt;</text>
+<text x="1099.0" y="2409.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ remover(id: Long): boolean</text>
+<text x="1099.0" y="2425.0" font-size="12" fill="#1C2B25" xml:space="preserve">+ contar(): long</text>
+<text x="1099.0" y="2441.0" font-size="12" fill="#1C2B25" xml:space="preserve"># consultar(sql: String, parametros: Object...): List&lt;T&gt;</text>
+<text x="1099.0" y="2457.0" font-size="12" fill="#1C2B25" xml:space="preserve"># inserir(sql: String, parametros: Object...): long</text>
+<text x="1099.0" y="2473.0" font-size="12" fill="#1C2B25" xml:space="preserve"># executar(sql: String, parametros: Object...): int</text>
+<text x="1099.0" y="2489.0" font-size="12" fill="#1C2B25" xml:space="preserve"># contar(sql: String, parametros: Object...): long</text>
+<text x="1099.0" y="2505.0" font-size="12" fill="#1C2B25" xml:space="preserve">- definirParametros(ps: PreparedStatement,</text>
+<text x="1099.0" y="2521.0" font-size="12" fill="#1C2B25" xml:space="preserve">      parametros: Object...): void</text>
+<text x="1099.0" y="2537.0" font-size="12" fill="#1C2B25" xml:space="preserve">- traduzir(e: SQLException): RuntimeException</text>
+<text x="1099.0" y="2553.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># dataHora(rs: ResultSet, coluna: String): LocalDateTime</text>
+<text x="1099.0" y="2569.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># data(rs: ResultSet, coluna: String): LocalDate</text>
+<text x="1099.0" y="2585.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># decimal(rs: ResultSet, coluna: String): Double</text>
+<text x="1099.0" y="2601.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># simNao(rs: ResultSet, coluna: String): boolean</text>
+<text x="1099.0" y="2617.0" font-size="12" fill="#1C2B25" text-decoration="underline" xml:space="preserve"># opcao(rs: ResultSet, coluna: String, tipo: Class&lt;E&gt;): E</text>
+<rect x="30" y="459" width="423" height="170" rx="6" fill="#FFFBEA" stroke="#B9A75A" stroke-width="1.2"/>
+<text x="46.0" y="485.0" font-size="14" fill="#1C2B25" font-weight="bold" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Legenda</text>
+<path d="M48.0,507.0 L86.0,507.0" fill="none" stroke="#3A5A4C" stroke-width="1.6" marker-end="url(#seta)" stroke-dasharray="7,5"/>
+<text x="96.0" y="511.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Dependência (injeção pelo construtor)</text>
+<path d="M48.0,533.0 L74.0,533.0" fill="none" stroke="#3A5A4C" stroke-width="1.6"/>
+<path d="M74,525 L86,533 L74,541 Z" fill="#ffffff" stroke="#3A5A4C" stroke-width="1.6"/>
+<text x="96.0" y="537.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Herança</text>
+<text x="48.0" y="563.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Overloads: buscarDisponiveis (AlimentoBO), contar (BaseDAO)</text>
+<text x="48.0" y="589.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Override: getTabela, getColunaId, mapear, completar (DAOs)</text>
+<text x="48.0" y="615.0" font-size="12.5" fill="#1C2B25" font-family="'Segoe UI', Arial, sans-serif" xml:space="preserve">Exceções (ApiException) sobem até o GlobalExceptionHandler</text>
+</svg>

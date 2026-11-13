@@ -1,0 +1,245 @@
+### Conecta Alimento API - requisições de exemplo (HTTP Client do IntelliJ)
+### Clique no ▶ ao lado de cada requisição. Para testar o deploy, troque o host
+### pela URL do Render. Datas no formato ISO: 2026-11-20 e 2026-11-20T18:00:00.
+@host = http://localhost:8080
+
+### Informações da API
+GET {{host}}/
+
+### Status da API e do banco Oracle
+GET {{host}}/api/status
+
+### Login (dados de demonstração: senha 123456)
+POST {{host}}/api/login
+Content-Type: application/json
+
+{ "email": "padaria@demo.com", "senha": "123456" }
+
+### ---------------- ESTABELECIMENTOS ----------------
+GET {{host}}/api/estabelecimentos
+
+###
+GET {{host}}/api/estabelecimentos/1
+
+###
+GET {{host}}/api/estabelecimentos/1/alimentos
+
+###
+POST {{host}}/api/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Restaurante Sabor do Brás",
+  "responsavel": "Paulo Andrade",
+  "email": "restaurante@demo.com",
+  "senha": "123456",
+  "telefone": "11955554444",
+  "cnpj": "11.222.333/0001-81",
+  "tipoEstabelecimento": "RESTAURANTE",
+  "endereco": { "logradouro": "Rua Oriente", "numero": "500", "bairro": "BRAS", "cep": "03016-000" }
+}
+
+###
+PUT {{host}}/api/estabelecimentos/4
+Content-Type: application/json
+
+{
+  "nome": "Restaurante Sabor do Brás",
+  "responsavel": "Paulo Andrade",
+  "email": "restaurante@demo.com",
+  "telefone": "11955553333",
+  "cnpj": "11222333000181",
+  "tipoEstabelecimento": "RESTAURANTE",
+  "endereco": { "logradouro": "Rua Oriente", "numero": "520", "bairro": "BRAS", "cep": "03016-000" }
+}
+
+###
+DELETE {{host}}/api/estabelecimentos/4
+
+### ---------------- INSTITUIÇÕES ----------------
+GET {{host}}/api/instituicoes
+
+###
+GET {{host}}/api/instituicoes/1/alimentos-proximos
+
+###
+GET {{host}}/api/instituicoes/2/solicitacoes
+
+###
+POST {{host}}/api/instituicoes
+Content-Type: application/json
+
+{
+  "nome": "Abrigo Esperança",
+  "responsavel": "Rita Moraes",
+  "email": "abrigo@demo.com",
+  "senha": "123456",
+  "telefone": "11966665555",
+  "tipoInstituicao": "ABRIGO",
+  "capacidadeAtendimento": 60,
+  "endereco": { "logradouro": "Rua Silva Teles", "numero": "100", "bairro": "PARI", "cep": "03026-000" }
+}
+
+###
+PUT {{host}}/api/instituicoes/3
+Content-Type: application/json
+
+{
+  "nome": "Abrigo Esperança",
+  "responsavel": "Rita Moraes",
+  "email": "abrigo@demo.com",
+  "telefone": "11966665555",
+  "tipoInstituicao": "ABRIGO",
+  "capacidadeAtendimento": 80,
+  "endereco": { "logradouro": "Rua Silva Teles", "numero": "100", "bairro": "PARI", "cep": "03026-000" }
+}
+
+###
+DELETE {{host}}/api/instituicoes/3
+
+### ---------------- ALIMENTOS ----------------
+GET {{host}}/api/alimentos
+
+###
+GET {{host}}/api/alimentos?status=DISPONIVEL
+
+### Busca para a instituição: filtros opcionais e distância em km
+GET {{host}}/api/alimentos/disponiveis?instituicaoId=1&prazoDias=2
+
+###
+GET {{host}}/api/alimentos/orientacoes
+
+###
+GET {{host}}/api/alimentos/1
+
+### Perecível: exige condição de armazenamento
+POST {{host}}/api/alimentos
+Content-Type: application/json
+
+{
+  "estabelecimentoId": 1,
+  "nome": "Bolo de cenoura fatiado",
+  "tipo": "PERECIVEL",
+  "categoria": "PANIFICACAO",
+  "quantidade": 12,
+  "unidade": "UNIDADE",
+  "dataValidade": "2026-11-28",
+  "fimRetirada": "2026-11-27T19:00:00",
+  "condicaoArmazenamento": "TEMPERATURA_AMBIENTE",
+  "declaracaoSeguranca": true
+}
+
+### Não perecível: exige embalagem íntegra
+POST {{host}}/api/alimentos
+Content-Type: application/json
+
+{
+  "estabelecimentoId": 2,
+  "nome": "Feijão carioca 1 kg",
+  "tipo": "NAO_PERECIVEL",
+  "categoria": "MERCEARIA",
+  "quantidade": 15,
+  "unidade": "PACOTE",
+  "dataValidade": "2027-03-10",
+  "fimRetirada": "2026-11-29T18:00:00",
+  "embalagemIntegra": true,
+  "lote": "FJ2611",
+  "declaracaoSeguranca": true
+}
+
+### Regra de segurança alimentar violada -> 422
+POST {{host}}/api/alimentos
+Content-Type: application/json
+
+{
+  "estabelecimentoId": 1,
+  "nome": "Iogurte natural",
+  "tipo": "PERECIVEL",
+  "categoria": "LATICINIOS",
+  "quantidade": 10,
+  "unidade": "UNIDADE",
+  "dataValidade": "2026-11-28",
+  "fimRetirada": "2026-11-27T19:00:00",
+  "condicaoArmazenamento": "TEMPERATURA_AMBIENTE",
+  "declaracaoSeguranca": false
+}
+
+###
+PUT {{host}}/api/alimentos/1
+Content-Type: application/json
+
+{
+  "estabelecimentoId": 1,
+  "nome": "Pães franceses do dia",
+  "tipo": "NAO_PERECIVEL",
+  "categoria": "PANIFICACAO",
+  "quantidade": 25,
+  "unidade": "UNIDADE",
+  "dataValidade": "2026-11-28",
+  "fimRetirada": "2026-11-27T20:00:00",
+  "embalagemIntegra": true,
+  "declaracaoSeguranca": true
+}
+
+### Remoção lógica (status REMOVIDO)
+DELETE {{host}}/api/alimentos/1
+
+### ---------------- SOLICITAÇÕES ----------------
+GET {{host}}/api/solicitacoes?status=PENDENTE
+
+###
+POST {{host}}/api/solicitacoes
+Content-Type: application/json
+
+{ "alimentoId": 3, "instituicaoId": 1, "quantidade": 5 }
+
+### Alterar a quantidade (somente PENDENTE)
+PUT {{host}}/api/solicitacoes/1
+Content-Type: application/json
+
+{ "quantidade": 15 }
+
+###
+PUT {{host}}/api/solicitacoes/1/aceitar
+
+###
+PUT {{host}}/api/solicitacoes/2/recusar
+Content-Type: application/json
+
+{ "motivo": "Item já reservado para outra entidade" }
+
+### Cancelar (instituição desiste)
+DELETE {{host}}/api/solicitacoes/1
+
+### ---------------- RETIRADAS ----------------
+GET {{host}}/api/retiradas
+
+### Agendar (solicitação ACEITA, dentro da janela de retirada)
+POST {{host}}/api/retiradas
+Content-Type: application/json
+
+{ "solicitacaoId": 1, "dataHoraAgendada": "2026-11-27T10:00:00" }
+
+###
+PUT {{host}}/api/retiradas/5
+Content-Type: application/json
+
+{ "dataHoraAgendada": "2026-11-27T11:30:00" }
+
+###
+PUT {{host}}/api/retiradas/5/confirmar-entrega
+Content-Type: application/json
+
+{ "quantidade": 20 }
+
+###
+PUT {{host}}/api/retiradas/5/confirmar-recebimento
+Content-Type: application/json
+
+{ "quantidade": 20, "observacao": "Recebido em boas condições" }
+
+###
+DELETE {{host}}/api/retiradas/5
+
+### ---------------- INDICADORES ----------------
+GET {{host}}/api/indicadores

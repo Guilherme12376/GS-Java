@@ -1,0 +1,21 @@
+# build
+target/
+*.class
+*.log
+
+# IntelliJ / VS Code / Eclipse
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# credenciais locais (nunca versionar)
+.env
+*.env
+application-local.properties
+
+# sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+# Blueprint do Render (New > Blueprint) - também pode ser criado manualmente
+# como "Web Service" com runtime Docker. DB_USER e DB_PASSWORD são preenchidos
+# no painel do Render (Environment) e nunca ficam no repositório.
+services:
+  - type: web
+    name: conecta-alimento-api
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /
+    envVars:
+      - key: DB_URL
+        value: jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
