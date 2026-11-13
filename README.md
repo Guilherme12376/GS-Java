@@ -16,9 +16,9 @@ Global Solution 2026.2 · Domain Driven Design - Java · FIAP
 
 ## Links
 
-- **Repositório GitHub:** `https://github.com/<usuario>/conecta-alimento-api` *(substituir pelo link real)*
-- **Deploy (Render):** `https://conecta-alimento-api.onrender.com` *(substituir pelo link real)*
-- **Documentação interativa (Swagger):** `<link do deploy>/swagger-ui.html`
+- **Repositório GitHub:** https://github.com/Guilherme12376/GS-Java
+- **Deploy:** não publicado; a API roda localmente (veja abaixo). O projeto está pronto para o Render (`Dockerfile` e `render.yaml`).
+- **Documentação interativa (Swagger):** `http://localhost:8080/swagger-ui.html` com a API em execução
 
 > No plano gratuito do Render o serviço "dorme" após 15 minutos sem acesso; a primeira requisição pode
 > levar cerca de 1 minuto para acordá-lo.
